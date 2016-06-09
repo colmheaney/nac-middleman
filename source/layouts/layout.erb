@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Northern Archaeological Consultancy" %></title>
+
+    <script src="/javascripts/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/slippry.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery.magnific-popup.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/stylesheets/skeleton.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/stylesheets/slippry.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/stylesheets/magnific-popup.css" type="text/css" media="all" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+	<body class="<%= page_classes %>">
+		<header id="main">
+			<div class="container">
+				<div class="row">
+					<a href="/">
+						<img id="home" src="/images/nac-logo.svg">
+					</a>
+					<nav>
+						<ul>
+							<li class="services"><a href="/services">Services</a></li>
+							<li class="meet-the-team"><a href="/meet-the-team">Meet the team</a></li>
+							<li class="news"><a href="/news">News</a></li>
+							<li class="contact-us"> <a href="/#contact-us">Contact us</a></li>
+						</ul>
+					</nav>
+				</div><!-- end of row -->
+			</div><!-- end of container -->
+		</header>
+
+		<div id="mobile">
+			<div class="container">
+				<div class="row">
+          <div>
+            <nav>
+              <ul>
+                <li class="home"><a href="/">Home</a></li>
+                <li class="services"><a href="/services">Services</a></li>
+                <li class="meet-the-team"><a href="/meet-the-team">Meet the team</a></li>
+                <li class="news"><a href="/news">News</a></li>
+                <li class="contact-us"> <a href="/#contact-us">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="toggle-button">
+            <i class="fa fa-bars fa-1x"></i>
+          </div>
+				</div><!-- end of row -->
+			</div><!-- end of container -->
+		</div>
+
+		<%= yield %>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="five columns">
+						<address>
+							<p>Northern Archaeological Consultancy Ltd</p>
+							<p>Unit 33 Farset Enterprise Park,</p>
+							<p>638 Springfield Road,</p>
+							<p> Belfast, BT12 7DY</p>
+						</address> 
+					</div>
+					<div class="four columns">
+						<p>T: <a href="#">(+44) 028 9031 4875</a></p>
+						<p>E: <a href="#"> info@northarc.co.uk</a></p>
+					</div>
+					<div class="three columns">
+						<ul>
+							<%#<li>%>
+								<%#<a href="#"><i class="fa fa-2x fa-twitter"></i><a>%>
+							<%#</li>%>
+							<li>
+								<a href="https://www.facebook.com/NorthArch"><i class="fa fa-2x fa-facebook"></i></a>
+							</li>
+							<%#<li>%>
+								<%#<a href="#"><i class="fa fa-2x fa-linkedin"></i></a>%>
+							<%#</li>%>
+						</ul> 
+					</div>
+				</div><!-- end of outer row -->
+			</div><!-- end of container -->
+		</footer>
+  </body>
+</html>
