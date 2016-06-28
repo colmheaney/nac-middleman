@@ -204,6 +204,7 @@ section.about-us img {
 
 li.service {
   list-style: url("images/service-li.svg");
+  margin-left: 20px;
 }
 
 li.service h3 {
@@ -404,7 +405,7 @@ footer ul li i:hover {
 	padding-top: 9px; 
   margin-bottom: 8px;
   position: absolute;
-  right: 0;
+  right: 10px;
 }
 
 .toggle-button:hover, .toggle-button:active, .toggle-button:focus {
@@ -430,6 +431,7 @@ footer ul li i:hover {
 
 @media (min-width: 900px) {
 	.toggle-button {
+    right: 0px;
 		display: none; 
 	}
 
