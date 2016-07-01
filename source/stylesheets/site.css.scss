@@ -207,6 +207,10 @@ li.service {
   margin-left: 20px;
 }
 
+li.service p {
+  margin-bottom: 5px;
+}
+
 li.service h3 {
   margin-bottom: 5px;
   display: inline;
@@ -327,36 +331,53 @@ footer ul li i:hover {
   display: none;
 }
 
-.pop-up {
-  position: relative;
-  background-color: white;
-  width: 30%;
-  padding: 50px 100px;
-  margin: 0 auto; 
-}
-
-.pop-up  h2 {
-  margin-bottom: 7px;
-  border-bottom: 4px solid #fde428; 
-  display: inline-block;
-}
-
-.pop-up img {
-  float: right; 
-}
-
-.bio-extended {
-  clear: both;
-  padding-top: 30px;
-}
-
-.mfp-close-btn-in .mfp-close {
-	opacity: 1;
-}
-
 .news-item p.published-date {
   margin-bottom: 10px;
   font-style: italic;
+}
+
+.toggle-button, .close-button {
+	display: block;
+	color: white;
+	font-size: 22px;
+	float: right;
+	padding-top: 9px; 
+  margin-bottom: 8px;
+  position: absolute;
+  right: 10px;
+}
+
+.toggle-button:hover, .toggle-button:active, .toggle-button:focus {
+	border: none;
+	color: white;
+}
+
+label.error {
+    color: red;
+    text-align: center;
+    margin: 10px auto;
+    float: right;
+}
+input.error {
+    border: 1px solid #ffcdcd;
+}
+input.error[type="email"]:focus {
+    border: 1px solid #ffcdcd;
+}
+
+@media (min-width: 900px) {
+	.toggle-button {
+    right: 0px;
+		display: none; 
+	}
+
+	header#main {
+		display: block; 
+	}
+
+  #mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -366,6 +387,18 @@ footer ul li i:hover {
 }
 
 @media (max-width: 940px) {
+  .bio img {
+    margin-bottom: 0px;
+  }
+  .bio h4 {
+    margin-top: 0px;
+  }
+  section {
+    padding: 30px;
+  }
+  section img { 
+    margin-bottom:30px;
+  }
   section.splash-screen img {
     margin-left: 0px;
     padding-top:30px;
@@ -397,22 +430,6 @@ footer ul li i:hover {
 	}
 }
 
-.toggle-button, .close-button {
-	display: block;
-	color: white;
-	font-size: 22px;
-	float: right;
-	padding-top: 9px; 
-  margin-bottom: 8px;
-  position: absolute;
-  right: 10px;
-}
-
-.toggle-button:hover, .toggle-button:active, .toggle-button:focus {
-	border: none;
-	color: white;
-}
-
 #mobile {
   background-color: rgba(19,73,125,1);
   a {
@@ -429,30 +446,3 @@ footer ul li i:hover {
   }
 }
 
-@media (min-width: 900px) {
-	.toggle-button {
-    right: 0px;
-		display: none; 
-	}
-
-	header#main {
-		display: block; 
-	}
-
-  #mobile {
-    display: none;
-  }
-}
-
-label.error {
-    color: red;
-    text-align: center;
-    margin: 10px auto;
-    float: right;
-}
-input.error {
-    border: 1px solid #ffcdcd;
-}
-input.error[type="email"]:focus {
-    border: 1px solid #ffcdcd;
-}

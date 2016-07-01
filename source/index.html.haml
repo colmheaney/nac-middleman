@@ -1,0 +1,141 @@
+---
+title: Northern Archaeological Consultancy
+---
+
+%section.splash-screen#splash-screen
+  .container
+    .row
+      .four.columns
+        = image_tag("nac-logo.svg", class: "nav-trigger")
+      .eight.columns
+        .header
+          %h1 Northern
+          %h1 Archaeological
+          %h1 Consultancy
+
+%section.about-nac#about-nac
+  .container
+    .row
+      .three.columns
+        %h2 About NAC
+        %p We are Northern Irelands first home grown and longest running archaeological consultancy. Established in 1997, we have a wealth knowledge and experience in the commercial archaeology sector, working closely with public bodies and private enterprise.
+
+      .nine.columns
+        %ul#slippry
+          %li 
+            = link_to image_tag "about-us.jpg", alt: "Inside the Souterrain passage from the A26 Road Scheme, Co Antrim"
+          %li 
+            = link_to image_tag "about-us2.jpg", alt: "Excavation of the Soutterrain from the A26 Road Scheme, Co Antrim"
+          %li 
+            = link_to image_tag "about-us3.jpg", alt: "Iron Age Barrows from Dobbies Garden Centre, Lisburn, Co Down"
+          %li 
+            = link_to image_tag "about-us4.jpg", alt: "Aerial view of the Souterrain from the A26 Road Scheme, Co Antrim"
+          %li 
+            = link_to image_tag "about-us5.jpg", alt: "Fish-shaped Clay pipe bowl from Belfast excavation"
+
+%section#services
+  .container
+    .row
+      .three.columns
+        %h2 Services
+        %p Our range of services has been developed to directly support our clients’ ever-increasing need to deliver progressive and innovative developments.
+        %p 
+          = link_to "See more...", "/services"
+      .offset-by-two.seven.columns
+        %ul
+          %li.service
+            %h3
+              = link_to 'heritage-consultancy', '/services#heritage-consultancy'
+            %p We provide BH 3 Archaeological Evaluations &amp; Planning Consultations.
+          %li.service
+            %h3
+              = link_to 'evaluation and excavation', '/services#evaluation-and-excavation'
+            %p Archaeological Mitigation including Watching Briefs &amp; Test Trenching. 
+          %li.service
+            %h3
+              = link_to 'historic buildings survey', '/services#historic-buildings-survey'
+            %p Historic and Industrial building surveys which may be required to fulfil planning conditions.
+          %li.service
+            %h3
+              = link_to 'post excavation analysis reporting', '/services#post-excavation-analysis-reporting'
+            %p Post-excavation services, including a variety of artefactual and environmental analyses.
+          %li.service
+            %h3
+              = link_to 'publications', '/services#publications'
+            %p Books, monographs, peer-reviewed journal articles and magazine articles from our vast array of excavations as well as those from third parties.
+          %li.service
+            %h3
+              = link_to 'public outreach', '/services#public-outreach'
+            %p We produce a range of archaeological materials from peer reviewed journals to children's books.
+
+%section.meet-the-team.no-border-bottom#meet-the-team
+  .container
+    .row
+      .three.columns
+        %h2 Meet the team
+        %p At the heart of NAC is a highly experienced team of archaeologists. Combined, we have over 100 years of experience in commercial archaeology.
+        %p 
+          = link_to "See more...", "/meet-the-team"
+
+      .nine.columns
+        .row
+          .bio.three.columns
+            = link_to "/meet-the-team#alan-reilly" do
+              = image_tag("alan_bw.jpg")
+              %h4 Alan Reilly
+              %p Alan graduated from Queens University in 1994, and has worked in the commercial archaeology sector ever since...
+
+          .bio.three.columns
+            = link_to "/meet-the-team#stephen-gilmore" do
+              = image_tag("stephen_bw.jpg")
+              %h4 Stephen Gilmore
+              %p Stephen Gilmore graduated from Queens University in 1990, since graduation he worked as a field archaeologist...
+
+          .bio.three.columns
+            = link_to "/meet-the-team#colin-dunlop" do
+              = image_tag("Colin_bw.jpg")
+              %h4 Colin Dunlop
+              %p Colin has worked as a commercial archaeologist since his graduation from Queens University in 2000 making his way up... 
+
+          .bio.three.columns
+            = link_to "meet-the-team#lianne-heaney" do
+              = image_tag("Lianne_bw.jpg")
+              %h4 Lianne Heaney
+              %p Lianne undertook her undergraduate archaeology degree at Queens University graduating in 2001 and her Masters... 
+
+        .row
+          .bio.three.columns
+            = link_to "/meet-the-team#jonathan-barkley" do
+              = image_tag("jonathon_bw.jpg")
+              %h4 Jonathan Barkley
+              %p Jonathan graduated with a degree in archaeology from Queens University in 2003, and worked as a commercial archaeologist...          
+
+          .bio.three.columns
+            = link_to "/meet-the-team#sarah-nicol" do
+              = image_tag("Sarah_bw.jpg")
+              %h4 Sarch Nicol
+              %p Sarah graduated with a degree in archaeology from Bournemouth University in 1999 and has worked on sites in England and the...
+
+          .bio.three.columns
+            = link_to "/meet-the-team#ross-bailey" do
+              = image_tag("Ross_bw.jpg")
+              %h4 Ross Bailey
+              %p Ross graduated with a degree in archaeology from Queens University in 2006. Ross started work with NAC as a field archaeologist...
+
+%section.contact-us.no-border-bottom#contact-us
+  .container
+    .row
+      .three.columns
+        %h2 Contact Us
+        %p If you'd like to work with us or just have a question, please feel free to get in touch.
+
+      .offset-by-two.six.columns
+        %form#form{ method: "post", action: "https://formspree.io/info@northarc.co.uk" }
+          .row
+            .u-full-width
+              %label Your Email
+              %input.u-full-width{ type: "email", name: "Email", id: "Email", placeholder: "you@example.com", required: "required" }
+          %label{ for: "Message" } Message
+          %textarea.u-full-width{ placeholder: "Type your message here...", name: "message", id: "Message" }
+          %input.button-primary.custom{ type: "submit", value: "Submit" }
+          %input{ type: "hidden", name: "_next", value: "http://northarc.co.uk" }
