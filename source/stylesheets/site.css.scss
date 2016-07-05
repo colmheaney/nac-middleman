@@ -252,7 +252,7 @@ li.service h3 a:hover {
 }
 
 footer {
-  padding: 70px 0 30px 0;
+  padding: 70px 30px 30px 30px;
   background-color: #333333;
 }
 
@@ -443,6 +443,7 @@ input.error[type="email"]:focus {
   }
   nav {
     display: none;
+    padding: 20px 30px;
   }
 }
 
